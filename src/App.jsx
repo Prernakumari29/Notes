@@ -11,17 +11,20 @@ const App = () => {
 // ---------------------------------------------use State for the Cards Shown-------------------------------------------
 const [cards , setCards] = useState([])
 
+
 const submitted = (e)=>{
   e.preventDefault()
   const copyCards =[...cards]
   copyCards.push (title)
-  setCards(copyCards)
+  setCards(copyCards);
+
 
   setTitle({
     main:'',
     detail:''
   })
 }
+
 
 // ------------------------------------------------Onchange function-----------------------------------------
 const handled =(e)=>{
